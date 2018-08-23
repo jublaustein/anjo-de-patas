@@ -1,0 +1,28 @@
+/* #sidenav {
+  padding: 0 2%;
+} */
+
+.content {
+  padding-left: 2%;
+  padding-top: 0.5%;
+}
+
+#menu {
+  background-color: transparent;
+  padding-top: 2%;
+}
+#menu img {
+  height: 25px;
+}
+
+
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+#search input {
+  font-size: 15px;
+  line-height: 15px;
+}

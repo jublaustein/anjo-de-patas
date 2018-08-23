@@ -1,0 +1,96 @@
+<!-- <mat-toolbar>
+  <span>Animal Rescue</span>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <span>
+    <button mat-button href="/C&atilde;es">C&atilde;es</button>
+  </span>
+  <span>
+    <button mat-button href="/Gatos">Gatos</button>
+  </span>
+  <span>
+    <button mat-button href="/Sobre">Sobre</button>
+  </span>
+  <span>
+    <button mat-button href="/Contato">Contato</button>
+  </span>
+
+
+ <span class="fill-remaining-space"></span>
+
+  <span>
+    <mat-form-field id="search">
+      <input matInput type="text">
+      <button mat-button matSuffix mat-icon-button aria-label="Busca">
+      <mat-icon>close</mat-icon>
+        <img src="https://png.icons8.com/windows/100/000000/search.png" height="20px">
+      </button>
+    </mat-form-field>
+
+  </span>
+</mat-toolbar> -->
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Animal Rescue</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMenu" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div  class="collapse navbar-collapse" id="navbarTogglerMenu" class="">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/caes">C&atilde;es</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/gatos">Gatos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sobre">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contato">Contato</a>
+      </li>
+    </ul>
+
+    <mat-form-field id="search">
+      <input matInput type="text">
+      <button mat-button matSuffix mat-icon-button aria-label="Busca">
+        <img src="https://png.icons8.com/windows/100/000000/search.png" height="20px">
+      </button>
+    </mat-form-field>
+  </div>
+</nav> -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light ToolbarComponent">
+  <a class="navbar-brand" href="#">Animal Rescue</a>
+  <button (click)="toggle()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarToggler" *ngIf="visible">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/caes">C&atilde;es</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/gatos">Gatos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sobre">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contato">Contato</a>
+      </li>
+
+    </ul>
+    <mat-form-field id="search">
+      <input matInput type="text">
+      <button mat-button matSuffix mat-icon-button aria-label="Busca">
+        <img src="https://png.icons8.com/windows/100/000000/search.png" height="20px">
+      </button>
+    </mat-form-field>
+
+  </div>
+</nav>
+
+

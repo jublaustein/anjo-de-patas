@@ -1,0 +1,19 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav id="sidenav" [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'">
+      <h2>Hello world!</h2>
+  </mat-sidenav>
+
+
+  <mat-sidenav-content class="content">
+    <div id="menu"[ngStyle]="{'display' : (screenWidth > 840) ? 'none' : 'block'}">
+      <a type="button"  (click)="sidenav.open()">
+        <img src="https://png.icons8.com/ios/100/000000/menu-filled.png">
+      </a>
+    </div>
+    <div class="">
+
+    </div>
+    <p>It works!</p>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

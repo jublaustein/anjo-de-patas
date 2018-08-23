@@ -1,0 +1,48 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav id="sidenav" [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'">
+    <mat-toolbar>
+      <span>Animal Rescue</span>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span>
+        <button mat-button href="/C&atilde;es">C&atilde;es</button>
+      </span>
+      <span>
+        <button mat-button href="/Gatos">Gatos</button>
+      </span>
+      <span>
+        <button mat-button href="/Sobre">Sobre</button>
+      </span>
+      <span>
+        <button mat-button href="/Contato">Contato</button>
+      </span>
+
+      <!-- This fills the remaining space of the current row -->
+      <span class="fill-remaining-space"></span>
+
+      <span>
+        <mat-form-field id="search">
+          <input matInput type="text">
+          <button mat-button matSuffix mat-icon-button aria-label="Busca">
+            <!-- <mat-icon>close</mat-icon> -->
+            <img src="https://png.icons8.com/windows/100/000000/search.png" height="20px">
+          </button>
+        </mat-form-field>
+
+      </span>
+    </mat-toolbar>
+  </mat-sidenav>
+
+
+  <mat-sidenav-content class="content">
+    <div id="menu"[ngStyle]="{'display' : (screenWidth > 840) ? 'none' : 'block'}">
+      <a type="button"  (click)="sidenav.open()">
+        <img src="https://png.icons8.com/ios/100/000000/menu-filled.png">
+      </a>
+    </div>
+    <div class="">
+
+    </div>
+    <p>It works!</p>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
