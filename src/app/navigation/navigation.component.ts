@@ -1,24 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
 })
+
 export class NavigationComponent implements OnInit {
 
-  screenWidth: number;
+  public visible = true;
+  innerWidth: number;
+  toggle() {
+    if (this.visible) {
+      return 'block';
+    } else {
+      return '';
+    }
+  }
+
 
   constructor() {
-    // set screenWidth on page load
-    this.screenWidth = window.innerWidth;
-    window.onresize = () => {
-      // set screenWidth on screen size change
-      this.screenWidth = window.innerWidth;
-    };
+    if (window.innerWidth <= 992) {
+      this.visible = false;
+    }
   }
 
   ngOnInit() {
+    console.log(window.innerWidth, this.visible);
   }
 
 }
